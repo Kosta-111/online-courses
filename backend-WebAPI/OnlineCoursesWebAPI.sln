@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineCoursesWebAPI", "OnlineCoursesWebAPI\OnlineCoursesWebAPI.csproj", "{F8EA9BA4-228F-4F32-BD9D-9FBD34BCCC22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{A6D92E0E-B710-414B-88F6-E9A4DE3477DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{EDF5E0E2-96F4-443A-88AE-0A2AC49857F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8EA9BA4-228F-4F32-BD9D-9FBD34BCCC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EA9BA4-228F-4F32-BD9D-9FBD34BCCC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EA9BA4-228F-4F32-BD9D-9FBD34BCCC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8EA9BA4-228F-4F32-BD9D-9FBD34BCCC22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6D92E0E-B710-414B-88F6-E9A4DE3477DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D92E0E-B710-414B-88F6-E9A4DE3477DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D92E0E-B710-414B-88F6-E9A4DE3477DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D92E0E-B710-414B-88F6-E9A4DE3477DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF5E0E2-96F4-443A-88AE-0A2AC49857F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF5E0E2-96F4-443A-88AE-0A2AC49857F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF5E0E2-96F4-443A-88AE-0A2AC49857F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF5E0E2-96F4-443A-88AE-0A2AC49857F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEBE3807-BD0D-47BE-B685-995F08D525C5}
+	EndGlobalSection
+EndGlobal
