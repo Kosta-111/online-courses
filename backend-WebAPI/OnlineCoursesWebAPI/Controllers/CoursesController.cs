@@ -9,7 +9,7 @@ namespace OnlineCoursesWebAPI.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 //[Authorize]
-[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+//[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 public class CoursesController(ICoursesService coursesService) : ControllerBase
 {
     [HttpGet]
