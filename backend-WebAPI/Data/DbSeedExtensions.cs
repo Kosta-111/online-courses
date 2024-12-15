@@ -63,7 +63,7 @@ public static class DbSeedExtensions
                 BirthDate = new(1990, 12, 1), Balance = 10 },
             new() { Id = 2, FirstName = "Petro", LastName = "Petrenko", Email = "petro.petrenko@gmail.com", Phone = "+380971234567", Country = "Ukraine",
                 BirthDate = new(2000, 11, 2), Balance = 0 },
-            new() { Id = 3, FirstName = "Oleg", LastName = "Novak", Email = "novak@gmail.com", Phone = "+380936547821", Country = "Ukraine",
+            new() { Id = 3, FirstName = "Oleg", LastName = "Mamchur", Email = "novak@gmail.com", Phone = "+380936547821", Country = "Ukraine",
                 BirthDate = new(2001, 5, 8), Balance = 100 },
             new() { Id = 4, FirstName = "Olexandr", LastName = "Bondar", Email = "bondar@gmail.com", Phone = "+380671200077", Country = "Ukraine",
                 BirthDate = new(2005, 1, 10), Balance = 1000 },

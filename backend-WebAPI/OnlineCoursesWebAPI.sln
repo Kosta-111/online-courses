@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineCoursesWebAPI", "OnlineCoursesWebAPI\OnlineCoursesWebAPI.csproj", "{F8EA9BA4-228F-4F32-BD9D-9FBD34BCCC22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineCoursesWebAPI", "OnlineCoursesWebAPI\OnlineCoursesWebAPI.csproj", "{F8EA9BA4-228F-4F32-BD9D-9FBD34BCCC22}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{A6D92E0E-B710-414B-88F6-E9A4DE3477DC}"
 EndProject
