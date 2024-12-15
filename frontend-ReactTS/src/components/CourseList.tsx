@@ -7,7 +7,7 @@ import { CourseModel } from '../models/courses';
 import { tokenService } from '../services/token.service';
 
 const api = import.meta.env.VITE_COURSES_API;
-const host = import.meta.env.VITE_HOST;
+const images = import.meta.env.VITE_API_IMAGES;
 
 const CourseList: React.FC = () => {
 
@@ -34,7 +34,7 @@ const CourseList: React.FC = () => {
             key: 'image',
             render: (_, item) => <img src={item.imageUrl?.startsWith('https://') || item.imageUrl?.startsWith('http://') || !item.imageUrl
                                         ? item.imageUrl 
-                                        : `${host}/${item.imageUrl}`} 
+                                        : `${images}/small/${item.imageUrl}`} 
                                         alt={item.name} 
                                         style={{height: "30px", margin: "auto", display: "block"}} />,
         },

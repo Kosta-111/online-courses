@@ -8,7 +8,7 @@ import { tokenService } from '../services/token.service';
 import axios from 'axios';
 
 const api = import.meta.env.VITE_COURSES_API;
-const host = import.meta.env.VITE_HOST;
+const images = import.meta.env.VITE_API_IMAGES;
 
 const normFile = (e: any) => {
     return e?.file.originFileObj;
@@ -47,7 +47,7 @@ export default function EditCourse() {
             if (res.data.imageUrl) {
                 const currentUrl = res.data.imageUrl?.startsWith('https://') || res.data.imageUrl?.startsWith('http://')
                                     ? res.data.imageUrl
-                                    : `${host}/${res.data.imageUrl}`;
+                                    : `${images}/medium/${res.data.imageUrl}`;
                 setCurrentImageUrl(currentUrl);
             }
         });

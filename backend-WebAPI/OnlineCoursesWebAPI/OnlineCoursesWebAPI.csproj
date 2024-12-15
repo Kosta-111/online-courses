@@ -14,6 +14,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.6" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
   </ItemGroup>
 
@@ -23,7 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\images\medium\" />
+    <Folder Include="wwwroot\images\large\" />
+    <Folder Include="wwwroot\images\small\" />
   </ItemGroup>
 
 </Project>

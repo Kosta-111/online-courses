@@ -20,9 +20,6 @@ public class JwtService(JwtOptions jwtOptions) : IJwtService
         
         if (user.BirthDate.HasValue)
             claims.Add(new Claim(ClaimTypes.DateOfBirth, user.BirthDate.ToString()!));
-        
-        //var roles = userManager.GetRolesAsync(user).Result;
-        //claims.AddRange(roles.Select(role => new Claim(ClaimsIdentity.DefaultRoleClaimType, role)));
 
         return claims;
     }

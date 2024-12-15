@@ -6,7 +6,7 @@ import { CourseModel } from '../models/courses';
 import { tokenService } from '../services/token.service';
 
 const api = import.meta.env.VITE_COURSES_API;
-const host = import.meta.env.VITE_HOST;
+const images = import.meta.env.VITE_API_IMAGES;
 
 type QueryParams = {
     id: string;
@@ -34,9 +34,9 @@ export default function CourseDetails() {
                     <h2>{item.name}</h2>
                     <p>{item.categoryName} ({item.levelName})</p>
                     <hr />
-                    <Image width={200} src={item.imageUrl?.startsWith('https://') || item.imageUrl?.startsWith('http://') || !item.imageUrl
+                    <Image width={300} src={item.imageUrl?.startsWith('https://') || item.imageUrl?.startsWith('http://') || !item.imageUrl
                                             ? item.imageUrl 
-                                            : `${host}/${item.imageUrl}`} 
+                                            : `${images}/large/${item.imageUrl}`} 
                                             alt={item.name} />
                     <p>Language: {item.language}</p>
                     <p>Price: {item.price}$</p>

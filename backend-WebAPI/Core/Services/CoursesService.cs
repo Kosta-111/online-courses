@@ -31,6 +31,7 @@ public class CoursesService(
         var courses = context.Courses
             .Include(x => x.Category)
             .Include(x => x.Level)
+            .OrderBy(x => x.Id)
             .ToList();
 
         return mapper.Map<IEnumerable<CourseModel>>(courses);
@@ -45,7 +46,7 @@ public class CoursesService(
             entity.ImageUrl = await filesService.SaveImage(model.Image);
 
         context.Courses.Add(entity);
-        context.SaveChanges();
+        await context.SaveChangesAsync();
     }
 
     public async Task Edit(CourseModelEdit model)
@@ -57,7 +58,7 @@ public class CoursesService(
             entity.ImageUrl = await filesService.EditImage(model.Image, entity.ImageUrl);
 
         context.Courses.Update(entity);
-        context.SaveChanges();
+        await context.SaveChangesAsync();
     }
 
     public async Task Delete(int id)
@@ -67,10 +68,10 @@ public class CoursesService(
 
         // delete file
         if (entity.ImageUrl is not null)
-            await filesService.DeleteImage(entity.ImageUrl);
+            filesService.DeleteImage(entity.ImageUrl);
 
         context.Courses.Remove(entity);
-        context.SaveChanges();
+        await context.SaveChangesAsync();
     }
 
     public IEnumerable<CategoryModel> GetCategories()
